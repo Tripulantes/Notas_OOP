@@ -14,7 +14,7 @@ public class Tripulante {
     private double reto_1,reto_2,reto_3,reto_4,reto_5, ingles, habilidades_p , nota_final, estadistica_1,estadistica_2,estadistica_3;
  
 /*
-* metod constructor
+* metodo constructor
 */   
 public Tripulante(){
     
