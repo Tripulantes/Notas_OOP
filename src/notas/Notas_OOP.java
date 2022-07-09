@@ -21,7 +21,7 @@ public class Notas_OOP {
         Sistema_control_notas notas = new Sistema_control_notas(numEst);
         for( int tri=0; tri<numEst;tri ++){
             Tripulante t = new Tripulante();
-            System.out.print("Ingrese numero de cedula: ");
+            System.out.print("\n\nIngrese numero de cedula del estudiante "+(tri+1)+": ");
             t.setCedula(sc.nextInt());
             System.out.print("Ingrese nota del reto 1: ");
             t.setReto_1(sc.nextDouble());
@@ -41,8 +41,10 @@ public class Notas_OOP {
             resultados1[tri]=t.est_1();
             resultados2[tri]=t.est_2();
             resultados3[tri]=t.est_3();
-            suma+=t.notaFinal();
-            System.out.println("El acumulado es de: "+ suma);
+            double nFinal=t.notaFinal();
+            suma+=nFinal;
+            //System.out.println("El acumulado es de: "+ suma);
+            System.out.println("La nota final del estudiante "+(tri+1)+" es de : "+ nFinal);
         }
         System.out.println ("------------------------------------------------");
         System.out.println ("\nEl promedio es de: "+ notas.calcularPromedio(suma));
