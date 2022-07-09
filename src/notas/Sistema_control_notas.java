@@ -32,7 +32,7 @@ public class Sistema_control_notas {
 		}
 		// Ahora podemos obtener el mayor usando la posición
 		double mayor = estadisticas[indiceDelMayor];
-		System.out.println("El mayor en estadistica_1 es: " + mayor );
-        return 1;
+		
+        return indiceDelMayor;
     }
 }
